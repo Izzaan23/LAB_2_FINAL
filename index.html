@@ -55,8 +55,11 @@
             box-shadow: 0 1px 5px rgba(0,0,0,0.3);
         }
         .logo-container img {
-            height: 90px; /* Laraskan ketinggian imej */
+            width: auto;   /* Benarkan lebar menyesuaikan diri */
+            height: 100%;  /* Ini akan menjadikan logo setinggi kotak putih */
+            max-height: 100px; /* Anda boleh selaraskan had maksimum ketinggian di sini */
             display: block;
+            object-fit: contain; /* Mengekalkan bentuk logo supaya tidak penyek */
         }
         /* KOD TAMBAHAN TAMAT */
         
