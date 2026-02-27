@@ -43,7 +43,7 @@
             pointer-events: auto;
             color: #333; /* Warna teks gelap */
         }
-   .logo-container {
+ .logo-container {
             position: absolute;
             top: 10px; 
             left: 55px; 
@@ -51,26 +51,27 @@
             pointer-events: auto;
             background-color: white; 
             
-            /* Saiz kotak putih yang ideal */
-            height: 60px;       /* Tinggi kotak yang sederhana */
-            width: 120px;       /* Lebar kotak yang memanjang */
+            /* KOTAK LAGI BESAR */
+            height: 80px;       /* Tinggikan kotak putih */
+            width: 160px;       /* Lebarkan kotak putih */
             
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;    /* PENTING: Untuk potong ruang kosong imej yang terkeluar */
-            border-radius: 4px;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+            overflow: hidden;    /* Potong ruang kosong imej */
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
         }
 
         .logo-container img {
-            /* Teknik membesarkan logo dalam kotak */
-            height: 180%;       /* Besarkan imej lebih dari tinggi kotak untuk buang ruang kosong fail asal */
+            /* ZOOM EKSTREM */
+            height: 280%;       /* Kita zoom hampir 3 kali ganda supaya tulisan nampak besar */
             width: auto;
             display: block;
             object-fit: contain;
-            /* Jika logo terlalu ke atas/bawah, laras nilai margin-top di bawah */
-            margin-top: 0px; 
+            
+            /* ADJUST POSITION - Jika logo nampak senget ke atas atau bawah */
+            margin-top: 5px;    
         }
         /* KOD TAMBAHAN TAMAT */
         
