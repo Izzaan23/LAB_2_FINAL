@@ -51,27 +51,29 @@
             pointer-events: auto;
             background-color: white; 
             
-            /* SAIZ KOTAK YANG IDEAL UNTUK FIT */
-            height: 50px;       /* Tinggi yang seimbang dengan butang zum */
-            width: 160px;       /* Lebarkan kotak sikit untuk logo panjang */
+            /* SAIZ KOTAK YANG KEMAS */
+            height: 55px;       
+            width: 155px;       
             
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;    /* Masih diperlukan untuk memastikan imej tidak terkeluar dari sempadan */
-            border-radius: 4px;
+            overflow: hidden;    /* Memastikan lebihan imej dipotong dengan kemas */
+            border-radius: 5px;
             box-shadow: 0 1px 5px rgba(0,0,0,0.3);
         }
 
         .logo-container img {
-            /* TEKNIK BAGI FIT SEMPURNA */
-            height: 100%;       /* Imej akan isi tinggi penuh kontena */
-            width: auto;         /* Lebar akan ikut nisbah imej supaya tidak penyek */
+            /* KITA GUNA 160% SAHAJA (Jangan guna 400% atau scale) */
+            height: 160%;       
+            width: auto;
             display: block;
-            object-fit: contain; /* Mengekalkan bentuk imej tanpa herot */
+            object-fit: contain; 
             
             /* POSISI TENGAH */
             margin: 0 auto;
+            
+            /* Jika logo masih terpotong sikit, kurangkan 160% kepada 140% */
         }
         /* KOD TAMBAHAN TAMAT */
         
