@@ -44,22 +44,30 @@
             color: #333; /* Warna teks gelap */
         }
         .logo-container {
+            .logo-container {
             position: absolute;
-            top: 10px; /* Sejajarkan dengan bahagian atas kawalan zum */
-            left: 70px; /* Tolak ke kanan sedikit supaya ia muat di sebelah kawalan zum */
-            z-index: 10001; /* Pastikan ia berada di atas elemen lain, termasuk zum */
+            top: 10px; 
+            left: 50px; 
+            z-index: 10001; 
             pointer-events: auto;
-            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit lutsinar seperti dalam rujukan gambar */
-            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 2px; /* Kecilkan padding supaya kotak putih tidak nampak besar sangat */
             border-radius: 5px;
             box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+            
+            /* Tetapkan tinggi kotak putih di sini */
+            height: 80px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        };
         }
         .logo-container img {
-            width: 150;   /* Benarkan lebar menyesuaikan diri */
-            height: 100%;  /* Ini akan menjadikan logo setinggi kotak putih */
-            max-height: 100px; /* Anda boleh selaraskan had maksimum ketinggian di sini */
+            .logo-container img {
+            height: 100%;  /* Logo akan ikut tinggi kotak putih */
+            width: auto;   /* Lebar akan ikut nisbah logo supaya tidak penyek */
             display: block;
-            object-fit: contain; /* Mengekalkan bentuk logo supaya tidak penyek */
+            object-fit: contain;
         }
         /* KOD TAMBAHAN TAMAT */
         
