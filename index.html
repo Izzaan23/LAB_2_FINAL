@@ -51,27 +51,27 @@
             pointer-events: auto;
             background-color: white; 
             
-            /* KITA KECILKAN KOTAK PUTIH SUPAYA NAMPAK KEMAS */
+            /* SAIZ KOTAK YANG IDEAL UNTUK FIT */
             height: 50px;       /* Tinggi yang seimbang dengan butang zum */
-            width: 140px;       /* Lebar yang sesuai untuk logo panjang */
+            width: 160px;       /* Lebarkan kotak sikit untuk logo panjang */
             
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;    /* WAJIB: Untuk potong ruang kosong imej */
+            overflow: hidden;    /* Masih diperlukan untuk memastikan imej tidak terkeluar dari sempadan */
             border-radius: 4px;
             box-shadow: 0 1px 5px rgba(0,0,0,0.3);
         }
 
         .logo-container img {
-            /* KITA ZOOM 4 KALI GANDA (400%) SUPAYA TULISAN PENUH */
-            height: 200%;       
-            width: auto;
+            /* TEKNIK BAGI FIT SEMPURNA */
+            height: 100%;       /* Imej akan isi tinggi penuh kontena */
+            width: auto;         /* Lebar akan ikut nisbah imej supaya tidak penyek */
             display: block;
+            object-fit: contain; /* Mengekalkan bentuk imej tanpa herot */
             
-            /* TEKNIK CROP CSS: Memastikan tulisan berada di tengah kotak */
-            object-fit: contain;
-            transform: scale(1.2); /* Tambahan zoom manual */
+            /* POSISI TENGAH */
+            margin: 0 auto;
         }
         /* KOD TAMBAHAN TAMAT */
         
