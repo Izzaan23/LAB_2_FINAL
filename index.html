@@ -51,29 +51,27 @@
             pointer-events: auto;
             background-color: white; 
             
-            /* SAIZ KOTAK YANG KEMAS */
-            height: 55px;       
-            width: 155px;       
+            /* SAIZ KOTAK YANG SEIMBANG */
+            height: 65px;       /* Tinggikan sikit kotak supaya logo nampak besar */
+            width: 160px;       /* Lebarkan supaya nama 'Ungku Omar' muat */
             
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;    /* Memastikan lebihan imej dipotong dengan kemas */
-            border-radius: 5px;
+            overflow: hidden;    /* Memotong ruang kosong yang berlebihan */
+            border-radius: 4px;
             box-shadow: 0 1px 5px rgba(0,0,0,0.3);
         }
 
         .logo-container img {
-            /* KITA GUNA 160% SAHAJA (Jangan guna 400% atau scale) */
-            height: 160%;       
+            /* ZOOM YANG SEDERHANA SUPAYA TIDAK TERPOTONG */
+            height: 125%;       
             width: auto;
             display: block;
             object-fit: contain; 
             
-            /* POSISI TENGAH */
+            /* PENTING: Tiada lagi 'transform: scale' supaya tidak zoom melampau */
             margin: 0 auto;
-            
-            /* Jika logo masih terpotong sikit, kurangkan 160% kepada 140% */
         }
         /* KOD TAMBAHAN TAMAT */
         
