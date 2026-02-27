@@ -43,29 +43,27 @@
             pointer-events: auto;
             color: #333; /* Warna teks gelap */
         }
-       .logo-container {
+      .logo-container {
             position: absolute;
             top: 10px; 
-            left: 50px; 
+            left: 55px; /* Kedudukan di sebelah butang zum */
             z-index: 10001; 
             pointer-events: auto;
             background-color: rgba(255, 255, 255, 0.9); 
             
-            /* KUNCI PENYELESAIAN: */
-            padding: 0px;        /* Buang semua ruang kosong dalam kotak */
-            height: 50px;       /* Tetapkan tinggi kotak yang lebih kecil */
-            display: flex;       /* Guna flexbox untuk kawalan posisi */
+            /* MEMBAIKI KOTAK PUTIH */
+            padding: 5px 10px;   /* Padding kecil untuk nampak kemas */
+            height: 45px;        /* Kecilkan tinggi kotak supaya tidak nampak 'bulk' */
+            display: flex;
             align-items: center;
-            overflow: hidden;    /* Potong imej jika terkeluar dari kotak */
             border-radius: 4px;
             box-shadow: 0 1px 5px rgba(0,0,0,0.3);
         }
 
         .logo-container img {
-            height: 140%;       /* Besarkan imej melebihi kotak untuk 'crop' ruang kosong fail asal */
-            width: auto;
+            height: 100%;        /* Logo akan ikut tinggi kotak 45px tadi */
+            width: auto;         /* Mengekalkan nisbah asal logo */
             display: block;
-            margin: 0 -10px;    /* Tarik logo ke dalam (negatif margin) untuk buang ruang kosong kiri/kanan */
             object-fit: contain;
         }
         /* KOD TAMBAHAN TAMAT */
