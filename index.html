@@ -32,7 +32,8 @@
             pointer-events: none; /* Membolehkan pengguna klik pada peta di sebalik ruang kosong */
         }
         .title-text {
-            background-color: rgba(255, 255, 255, 0.9);
+            /* Warna latar belakang kelabu muda separuh lutsinar seperti dalam rujukan imej */
+            background-color: rgba(223, 223, 223, 0.8);
             padding: 10px 25px;
             border-radius: 8px;
             font-family: Arial, sans-serif;
@@ -40,20 +41,21 @@
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
             pointer-events: auto;
-            color: #333;
+            color: #333; /* Warna teks gelap */
         }
         .logo-container {
             position: absolute;
-            right: 20px;
-            top: 0px;
+            top: 10px; /* Sejajarkan dengan bahagian atas kawalan zum */
+            left: 50px; /* Tolak ke kanan sedikit supaya ia muat di sebelah kawalan zum */
+            z-index: 10001; /* Pastikan ia berada di atas elemen lain, termasuk zum */
             pointer-events: auto;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit lutsinar seperti dalam rujukan gambar */
             padding: 5px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.3);
         }
         .logo-container img {
-            height: 250px; /* Anda boleh ubah saiz logo di sini */
+            height: 60px; /* Laraskan ketinggian imej */
             display: block;
         }
         /* KOD TAMBAHAN TAMAT */
@@ -65,9 +67,10 @@
         
         <div id="header-overlay">
             <div class="title-text">TAMAN PERUMAHAN</div>
-            <div class="logo-container">
-                <img src="https://www.puo.edu.my/wp-content/uploads/2021/04/Logo-PUO-1.png" alt="Logo Politeknik Ungku Omar">
-            </div>
+        </div>
+        
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Politeknik Ungku Omar">
         </div>
         <div id="map">
         </div>
